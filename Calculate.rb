@@ -1,6 +1,5 @@
 class Calcute
-
-  def initialize()
+  def initialize
     puts "Iveskite triju krastiniu ilgius"
     @pirmas_skaicius = gets.chomp.to_i
     @antras_skaicius = gets.chomp.to_i
@@ -29,18 +28,16 @@ class Calcute
   end
 
   def does_triangle_exist
-  if getsk1 + getsk2 > getsk3 || getsk1 + getsk3 > getsk2 || getsk3 + getsk2 > getsk1 # salyga ar trikampis egzistuoja
-    puts "trikampis egzistuoja"
+    if getsk1 + getsk2 > getsk3 || getsk1 + getsk3 > getsk2 || getsk3 + getsk2 > getsk1 # salyga ar trikampis egzistuoja
+      puts "trikampis egzistuoja"
 
-  else puts "trikampis neegzistuoja"
-  end
+    else puts "trikampis neegzistuoja"
+    end
   end
 end
 
-triangle=Calcute.new()
+triangle = Calcute.new
 
-
-a=triangle.getsk1()
+a = triangle.getsk1
 puts "pirmas sk : #{a}"
-triangle.plotas_calc()
-
+triangle.plotas_calc
